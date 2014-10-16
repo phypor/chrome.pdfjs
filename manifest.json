@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Pradeep's PDF Viewer",
+  "version": "0.0.1",
+  "description": "Uses HTML5 to display PDF files directly in Chrome.",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "permissions": [
+    "webRequest", "webRequestBlocking", 
+    "http://*/*.pdf",
+    "https://*/*.pdf",
+    "file:///*/*.pdf",
+    "http://*/*.PDF",
+    "https://*/*.PDF",
+    "file://*/*.PDF"
+  ],
+  "background": {
+    "page": "pdfHandler.html"	
+  }
+}
